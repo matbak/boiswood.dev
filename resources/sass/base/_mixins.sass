@@ -1,0 +1,21 @@
+/*==============================================
+    Mixins
+/*=============================================*/
+
+@mixin rwd($width)
+    @if $width==small
+        @media only screen and (min-width: $sm-width)
+            @content
+
+
+    @else if $width==medium
+        @media only screen and (min-width: $md-width)
+            @content
+
+
+    @else if $width==large
+        @media only screen and (min-width: $lg-width)
+            @content
+
+
+

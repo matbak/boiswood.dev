@@ -1,0 +1,35 @@
+/*==============================================
+    Helpers
+/*=============================================*/
+
+.clearfix
+    clear: both
+    content: ''
+    display: table
+
+
+.hidden-xs
+    display: none
+    @include rwd(small)
+        display: initial
+
+
+
+.no-display
+    display: none
+
+
+
+/*==============================================
+    Images
+/*=============================================*/
+
+img
+    &.is-circle
+        border-radius: 50%
+
+    &.is-responsive
+        max-width: 100%
+        height: auto
+
+
